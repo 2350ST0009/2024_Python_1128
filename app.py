@@ -4,9 +4,15 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 st.title("Web App")
 st.write("**これがstreamlitアプリ**")
+
+img = Image.open('dog.jpg')
+st.image(img)
+
+
 
 answer = st.button('Say hello')
 
